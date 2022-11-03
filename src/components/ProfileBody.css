@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
+
+html {
+    overflow: hidden;
+}
+
+.profile {
+    background-image: url("../assets/background/profileback.jpg");
+    background-position: 0%;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 50vw;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 6px;
+    grid-row-gap: 12px;
+    padding: 1rem;
+    border: black solid 1px;
+    align-items: center;
+}
+
+.profile-info {
+    padding: 2rem;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.profile-info h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+@media screen and (max-width:800px) {
+    .profile-container {
+        width: 80vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .profile-info {
+        height:50vh;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,54 @@
+#homebackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    position: fixed;
+}
+
+.hero .content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 40vh;
+}
+
+.hero .content h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1.6rem;
+}
+
+.hero .btn {
+    margin: 1rem .2rem;
+
+}
+
+@media screen and (max-width:640px){
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .hero .content {
+        top: 10vh;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+    }
+}
