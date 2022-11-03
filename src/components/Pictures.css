@@ -1,0 +1,65 @@
+html {
+    overflow-y: scroll;
+}
+.pictures {
+    overflow-y: auto;
+}
+.pictures-container{
+    margin-bottom: 5rem;
+}
+.pictures-container h1 {
+    text-align: center;
+    color: white;
+}
+.pictures-container h2 {
+    text-align: center;
+    color: grey;
+    margin-top: 5rem;
+}
+.pictures-image {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.pictures-image img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;    
+    margin: 2rem 0 2rem 0rem;
+}
+
+img  {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.loadingDiv {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageOpen {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.imageOpen img {
+    max-width: 800px;
+}
+@media screen and (max-width:1200px) {
+    .pictures-image {
+        margin: 0.5rem;
+    }
+    .loadingDiv {
+        width: 100vw;              
+    }
+}

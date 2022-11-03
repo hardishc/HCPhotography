@@ -1,0 +1,1 @@
+export const API = "https://hcphotographybackend.herokuapp.com/api/images/";

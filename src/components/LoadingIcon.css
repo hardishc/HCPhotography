@@ -1,0 +1,45 @@
+.loadingSVG .clicked {
+    animation: clicked 1s infinite steps(3);           
+}
+
+.loadingSVG .button {
+    transform: translateY(0px) rotate(0deg) ;
+    animation: button 1s infinite steps(4);
+}
+
+.loadingSVG {
+    transform: translateY(0px) rotate(0deg);
+    animation: loadingSVG 1s infinite steps(4);
+}
+
+.clicked {
+    opacity: 0;
+}
+
+@keyframes clicked {
+    25% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes button {
+    20% {
+        transform: translateY(2px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes loadingSVG {
+    20% {
+        transform: translateY(2px) rotate(-2deg);
+    }
+    40% {
+        transform: translateY(0px)rotate(0deg);
+    }
+}

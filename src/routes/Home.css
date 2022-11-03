@@ -1,0 +1,13 @@
+.content {
+    width: 85vw;
+    margin-left:15vw;
+}
+
+
+@media screen and (max-width:800px) {
+    .content {
+        padding-top:5rem;
+        width: 100vw;
+        margin-left:0;
+    }
+}
