@@ -9,8 +9,8 @@ const S3Retrieve = asyncHandler(async (req, res, next) => {
     }
 
     const s3 = new AWS.S3({
-        accessKeyId: ACCESS_KEY_ID,
-        secretAccessKey: SECRET_ACCESS_KEY,
+        accessKeyId: process.env.ACCESS_KEY_ID,
+        secretAccessKey: process.env.SECRET_ACCESS_KEY,
         Bucket: category
     });
 
